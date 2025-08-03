@@ -46,13 +46,9 @@ Verify success installation of Python (v3 in our case): python --version or pyth
 7) to run playwright/test, refer instructions below.
 
 
-## PLAYWRIGHT CODE GENERATOR
-1) playwright codegen https://nget.digipay.my/plans/postpaid/PBH6100266
-
-
 ## TO RUN TEST
-1) python tests/regression/test_mnp_regression.py
-2) python tests/e2e/test_npl_new.py
+1) python tests/e2e/.py
+2) python tests/regression/example_module.py
 
 
 ## [PRIORITY 1] helper.py FUNCTIONS TO DEVELOP... 
