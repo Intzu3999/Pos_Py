@@ -10,7 +10,7 @@ def test_001_Rate_Calculator(page, Malaysia, India):
 
     # Select Malaysia
     page.select_option("select[name='from']", value=Malaysia)
-    page.select_option("select[name='to']", value=Singapore)
+    page.select_option("select[name='to']", value=India)
 
     # Enter amount
     page.fill("input[name='amount']", "1000")
