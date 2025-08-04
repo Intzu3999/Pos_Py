@@ -1,0 +1,37 @@
+import { test, expect } from '@playwright/test';
+
+test('test', async ({ page }) => {
+  await page.goto('https://www.pos.com.my/send/ratecalculator');
+  await page.getByText('To', { exact: true }).click();
+  await page.locator('label').click();
+  await page.locator('.mat-mdc-form-field-infix').click();
+  await page.getByRole('combobox', { name: 'country' }).fill('Malaysia');
+  await page.getByRole('combobox', { name: 'country' }).press('Enter');
+  await page.getByRole('spinbutton', { name: 'Postcode' }).first().click();
+  await page.getByRole('spinbutton', { name: 'Postcode' }).first().fill('25600');
+  await page.getByRole('spinbutton', { name: 'Postcode' }).first().click();
+  await page.locator('#mat-mdc-dialog-4').click();
+  await page.getByRole('spinbutton', { name: 'Postcode' }).nth(1).click();
+  await page.getByRole('spinbutton', { name: 'Postcode' }).nth(1).fill('84000');
+  await expect(page.locator('div').filter({ hasText: /^FromCountryMalaysia$/ }).getByPlaceholder('State')).toHaveValue('Perak');
+  await expect(page.getByRole('textbox', { name: 'State' }).nth(1)).toHaveValue('Johor');
+  await page.getByText('Weight (kg)').click();
+  await page.getByRole('spinbutton', { name: 'eg. 0.1kg' }).click();
+  await page.getByRole('spinbutton', { name: 'eg. 0.1kg' }).fill('3');
+  await page.locator('#contentBody button').click();
+  await page.getByText('Width(cm)').click();
+  await page.locator('div').filter({ hasText: /^Width\(cm\)$/ }).getByRole('spinbutton').click();
+  await page.locator('div').filter({ hasText: /^Width\(cm\)$/ }).getByRole('spinbutton').fill('10');
+  await page.getByText('Length(cm)').click();
+  await page.locator('div').filter({ hasText: /^Length\(cm\)$/ }).getByRole('spinbutton').click();
+  await page.locator('div').filter({ hasText: /^Length\(cm\)$/ }).getByRole('spinbutton').click();
+  await page.locator('div').filter({ hasText: /^Length\(cm\)$/ }).getByRole('spinbutton').fill('10');
+  await page.getByText('Volumetric CalculatorWidth(cm').click();
+  await page.getByText('Height(cm)').click();
+  await page.locator('div').filter({ hasText: /^Height\(cm\)$/ }).getByRole('spinbutton').click();
+  await page.locator('div').filter({ hasText: /^Height\(cm\)$/ }).getByRole('spinbutton').fill('5');
+  await page.getByText('Volumetric Weight (kg)').click();
+  await page.locator('#mat-mdc-dialog-7').getByText('Calculate').click();
+  await page.getByText('Reset').click();
+  await page.locator('#mat-mdc-dialog-7 path').first().click();
+});
