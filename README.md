@@ -47,4 +47,3 @@ Verify success installation of Python (v3 in our case): python --version or pyth
 ## TO RUN TEST
 1) python tests/e2e/.py
 2) python tests/regression/example_module.py
-
