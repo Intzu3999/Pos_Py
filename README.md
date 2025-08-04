@@ -1,9 +1,7 @@
-# Pos_Py
+# 🐍 PYTHON PLAYWRIGHT 🎭
+## Pos_Py - POS MALAYSIA ##
 Take Home API Testing And Test Automation
 
-# 🐍 PYTHON PLAYWRIGHT 🎭
-
-# POS MALAYSIA #
 
 ## WHAT DOES THIS PROJECT DO
 
