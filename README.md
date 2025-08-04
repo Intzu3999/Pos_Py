@@ -56,6 +56,6 @@ playwright codegen https://url/here
 ## FOLDER ARCHITECTURE EXPLANATION: MVC
 | MVC Role	| Purpose in MVC | Equivalent in this test | Explanation
 |----------|----------|----------|----------|
-Model (M) | Business logic, data handling | services/ folder (API calls, DB utils) | These handle data, such as fetching or validating from APIs, similar to the Model layer in MVC.
+Model (M) | Business logic, data handling | api/ folder (API calls, DB utils) | These handle data, such as fetching or validating from APIs, similar to the Model layer in MVC.
 View (V) | UI components, rendering output | pages/ folder (Playwright functions sorted by pages and elements/components) | These represent the UI elements — input fields, buttons, dropdowns — and interact with them.
 Controller (C) | Manages flow between M and V | scripts/ folder (test execution flow) | This orchestrates everything — when to click, when to fetch data, how to assert — like a controller.
