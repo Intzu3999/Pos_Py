@@ -30,20 +30,24 @@ Type variables | PascalCase	| T, ResponseType
 ## TO SETUP
 1) Install python3.exe x64-bit.
 Verify success installation of Python (v3 in our case): python --version or python3 --version
-![alt text](image.png)
+![Python install](src/image.png)
 2) At root project create new virtual env, naming our virtual env as venv: python -m venv venv
-![alt text](image-1.png)
+![Python install](src/image-1.png)
 3) Start Python's virtual env: venv\Scripts\activate 
-![alt text](image-2.png)
+![Python install](src/image-2.png)
 4) python.exe -m pip install --upgrade pip
 5) pip install -r requirements.txt
-![alt text](image-3.png)
-6) playwright install -will include this in a shell script soon
-![alt text](image-4.png)
-6) to end venv environment: deactivate
-7) to run playwright/test, refer instructions below.
+![Python install](src/image-3.png)
+6) playwright install
+![Python install](src/image-4.png)
+7) At root project, create .env file:
+8) to end venv environment: deactivate
+9) to run playwright/test, refer instructions below.
 
 
 ## TO RUN TEST
-1) python tests/e2e/.py
-2) python tests/regression/example_module.py
+1) python tests/scripts/test_rate_calculator.py
+2) python tests/scripts/test_example_page.py
+
+## PLAYWRIGHT CODEGEN
+playwright codegen https://url/here
