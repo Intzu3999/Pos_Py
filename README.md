@@ -1,32 +1,15 @@
-# 🐍 PYTHON PLAYWRIGHT 🎭
-Pos_Py - POS MALAYSIA
-Take Home API Testing And Test Automation
+# ANSWER | POS MALAYSIA | Take Home API Testing And Test Automation
 
 
-## WHAT DOES THIS PROJECT DO
-1) 
-
-## PYTHON BEST PRACTICE
-Python's Naming Convention (PEP 8) are summarized below:
-
-| Element	| Convention | Example |
-|----------|----------|----------|
-Script/Module names | snake_case | customer_api.py
-Functions | snake_case | get_customer_data()
-Variables | snake_case | customer_id
-Classes | PascalCase | CustomerAPI
-Constants | SCREAMING_SNAKE_CASE | MAX_RETRIES
-Methods | snake_case | calculate_total()
-Private variables | _snake_case	| _internal_data
-Name-mangled variables | __snake_case | __private_data
-Packages | lowercase | mypackage
-Type variables | PascalCase	| T, ResponseType
-
-- PEP 8 Official Guide https://peps.python.org/pep-0008/
-- Python Documentation https://docs.python.org/3/tutorial/classes.html#private-variables 
-- Playwright Documentation https://playwright.dev/python/docs/api/class-playwright
+## QUESTION 1 ANSWER
+1) API to get list of countries: https://www-api.pos.com.my/api/countries [GET request]
+2) API to get state by the Postcode Number entered: https://www-api.pos.com.my/api/getStateByPostcode [POST request]
+3) API to calculate price https://www-api.pos.com.my/api/price [POST request]
+4) Postman API Collection: https://universal-astronaut-374685.postman.co/workspace/POS-Malaysia~aa424b49-188d-484d-b6e7-f68f559c1714/collection/22868763-9000b678-3623-4da2-be66-4e9a95eab93a?action=share&creator=22868763&active-environment=22868763-23042983-b067-43d6-ae00-f48e8f02346d 
+5) Postman Environment: https://universal-astronaut-374685.postman.co/workspace/POS-Malaysia~aa424b49-188d-484d-b6e7-f68f559c1714/environment/22868763-23042983-b067-43d6-ae00-f48e8f02346d?action=share&creator=22868763&active-environment=22868763-23042983-b067-43d6-ae00-f48e8f02346d
 
 
+## QUESTION 2 ANSWER
 ## TO SETUP
 1) Install python3.exe x64-bit.
 Verify success installation of Python (v3 in our case): python --version or python3 --version
@@ -43,7 +26,6 @@ Verify success installation of Python (v3 in our case): python --version or pyth
 7) At root project, create .env file:
 8) to end venv environment: deactivate
 9) to run playwright/test, refer instructions below.
-
 
 ## TO RUN TEST
 1) python tests/scripts/test_rate_calculator.py
