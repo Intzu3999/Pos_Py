@@ -29,8 +29,8 @@ Verify success installation of Python (v3 in our case): python --version or pyth
 9) to run playwright/test, refer instructions below.
 
 ### TO RUN TEST
-1) python tests/scripts/test_rate_calculator.py
-2) python tests/scripts/test_example_page.py
+1) python tests/e2e/test_rate_calculator.py
+2) python tests/e2e/test_example_page.py
 
 ### PLAYWRIGHT CODEGEN
 playwright codegen https://url/here
