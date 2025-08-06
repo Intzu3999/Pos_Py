@@ -3,15 +3,15 @@ import aiohttp
 import urllib.parse
 from asyncio import Semaphore
 
-from tests.api.handle_api_error import handle_api_error
+from tests.api.api_error_handler import api_error_handler
 
 POS_BASE_URL = os.getenv("POS_BASE_URL")
 
 service_rate_limiter = Semaphore(1)
 
-async def get_countries_api(token, country_id):
+async def countries_api(token, country_id):
     async with service_rate_limiter:
-        service = "get_countries_api"
+        service = "countries_api"
         service_data = f"{service}_data"
         result = {"country_id": country_id}
 
@@ -38,17 +38,17 @@ async def get_countries_api(token, country_id):
                         "country_id": country_id.get("country_id", "N/A"),
                     }
 
-                    print(f"✅ get_countries_api: {response.status} country:{extracted_data['country_id']}")
+                    print(f"✅ countries_api: {response.status} country:{extracted_data['country_id']}")
 
                     result[service_data] = {
-                        "get_countries_api_status": f"✅ {response.status}",
+                        "countries_api_status": f"✅ {response.status}",
                         **extracted_data,  # Expands dictionary to maintain consistency
                     }
 
         except aiohttp.ClientResponseError as error:
-            return await handle_api_error(error, country_id, service)
+            return await api_error_handler(error, country_id, service)
 
         except Exception as error:
-            return await handle_api_error(error, country_id, service)
+            return await api_error_handler(error, country_id, service)
         
         return result

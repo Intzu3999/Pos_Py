@@ -1,7 +1,7 @@
-# ANSWER | POS MALAYSIA | Take Home API Testing And Test Automation
+# ASSESSMENT ANSWER | POS MALAYSIA | Take Home API Testing And Test Automation
 
 
-## QUESTION 1 ANSWER
+### QUESTION 1 ANSWER
 1) API to get list of countries: https://www-api.pos.com.my/api/countries [GET request]
 2) API to get state by Postcode Number: https://www-api.pos.com.my/api/getStateByPostcode [POST request]
 3) API to calculate price: https://www-api.pos.com.my/api/price [POST request]
@@ -9,8 +9,9 @@
 5) Postman Environment: https://universal-astronaut-374685.postman.co/workspace/POS-Malaysia~aa424b49-188d-484d-b6e7-f68f559c1714/environment/22868763-23042983-b067-43d6-ae00-f48e8f02346d?action=share&creator=22868763&active-environment=22868763-23042983-b067-43d6-ae00-f48e8f02346d POS_BASE_URL = https://www-api.pos.com.my/api
 
 
-## QUESTION 2 ANSWER
-## TO SETUP
+### QUESTION 2 ANSWER
+
+### TO SETUP
 1) Install python3.exe x64-bit.
 Verify success installation of Python (v3 in our case): python --version or python3 --version
 ![Python install](src/image.png)
@@ -27,15 +28,15 @@ Verify success installation of Python (v3 in our case): python --version or pyth
 8) to end venv environment: deactivate
 9) to run playwright/test, refer instructions below.
 
-## TO RUN TEST
+### TO RUN TEST
 1) python tests/scripts/test_rate_calculator.py
 2) python tests/scripts/test_example_page.py
 
-## PLAYWRIGHT CODEGEN
+### PLAYWRIGHT CODEGEN
 playwright codegen https://url/here
 
 
-## FOLDER ARCHITECTURE EXPLANATION: MVC
+### FOLDER ARCHITECTURE EXPLANATION: MVC
 | MVC Role	| Purpose in MVC | Equivalent in this test | Explanation
 |----------|----------|----------|----------|
 Model (M) | Business logic, data handling | api/ folder (API calls, DB utils) | These handle data, such as fetching or validating from APIs, similar to the Model layer in MVC.
