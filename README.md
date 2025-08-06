@@ -3,10 +3,10 @@
 
 ## QUESTION 1 ANSWER
 1) API to get list of countries: https://www-api.pos.com.my/api/countries [GET request]
-2) API to get state by the Postcode Number entered: https://www-api.pos.com.my/api/getStateByPostcode [POST request]
-3) API to calculate price https://www-api.pos.com.my/api/price [POST request]
+2) API to get state by Postcode Number: https://www-api.pos.com.my/api/getStateByPostcode [POST request]
+3) API to calculate price: https://www-api.pos.com.my/api/price [POST request]
 4) Postman API Collection: https://universal-astronaut-374685.postman.co/workspace/POS-Malaysia~aa424b49-188d-484d-b6e7-f68f559c1714/collection/22868763-9000b678-3623-4da2-be66-4e9a95eab93a?action=share&creator=22868763&active-environment=22868763-23042983-b067-43d6-ae00-f48e8f02346d 
-5) Postman Environment: https://universal-astronaut-374685.postman.co/workspace/POS-Malaysia~aa424b49-188d-484d-b6e7-f68f559c1714/environment/22868763-23042983-b067-43d6-ae00-f48e8f02346d?action=share&creator=22868763&active-environment=22868763-23042983-b067-43d6-ae00-f48e8f02346d
+5) Postman Environment: https://universal-astronaut-374685.postman.co/workspace/POS-Malaysia~aa424b49-188d-484d-b6e7-f68f559c1714/environment/22868763-23042983-b067-43d6-ae00-f48e8f02346d?action=share&creator=22868763&active-environment=22868763-23042983-b067-43d6-ae00-f48e8f02346d POS_BASE_URL = https://www-api.pos.com.my/api
 
 
 ## QUESTION 2 ANSWER
